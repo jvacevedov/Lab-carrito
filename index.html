@@ -73,16 +73,44 @@
             </div>
 
                 <div class="col-lg-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fa-solid fa-cart-shopping"></i> Cart</h5>
+                    <div class="container border rounded py-2">
+                        <h5 class="title"><i class="fa-solid fa-cart-shopping"></i> Cart</h5>
+                        <p class="text-center" id="condicionalTotal">No items yet</p>
                         <ul class="list-group mb-3" id="lista-carrito">
-                        <li class="list-group-item">No items yet</li>
-                        </ul>
+                             </ul>
+
+
+                        <div class="container" id="lista-carrito-div">
+                            <!-- <div class="row border rounded align-items-center">
+                                <div class="col-6">
+                                <p class="text-center">Hill's Science Diet puppy</p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="text-center">$ 30.000</p>
+                                </div>                                
+                                <div class="col-2 d-flex justify-content-end">
+                                <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-trash-can"></i></button>
+                                </div>
+                            </div>
+                            <div class="row border rounded align-items-center">
+                                <div class="col-6">
+                                <p class="text-center">Hill's Science Diet puppy</p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="text-center">$ 30.000</p>
+                                </div>                                
+                                <div class="col-2 d-flex justify-content-end">
+                                <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-trash-can"></i></button>
+                                </div>
+                            </div> -->
+                        </div>
+                        
+                        
+                       
                         <h6><span id="total">Total: $0</span></h6>
                         <div class="py-5">
-                        <button class="btn btn-danger mt-auto mb-3">Buy now</button>
-                        <button class="btn btn-danger mt-auto mb-3">Vaciar Carrito</button>
+                        <a href="completar.html" target="_blank" class="btn btn-danger mt-auto mb-3">Buy now</a>
+                        <button id="btn-vaciar" class="btn btn-danger mt-auto mb-3">Vaciar Carrito</button>
                         </div>
                     </div>
                 </div>
