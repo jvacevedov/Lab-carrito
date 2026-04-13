@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <script src="https://kit.fontawesome.com/cf2ae026cd.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="sticky-top bg-body-tertiary">
+        <nav class="d-flex justify-content-between align-items-center px-4 py-2">
+            <span class="navbar-brand mb-0 h1">
+            <i class="fa-solid fa-dog"></i> Pet Shop
+            </span>
+            <button type="button" class="btn btn-danger">
+                <i class="fa-solid fa-cart-shopping"></i>Cart <span id="badge" class="badge bg-light text-dark">0</span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <div class="container py-5">
+        <div class="row">
+
+            <div class="col-lg-9">
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="https://animalsveterinaria.vtexassets.com/arquivos/ids/166839-1600-auto?v=638913221120500000&width=1600&height=auto&aspect=true" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hill's Science Diet puppy</h5>
+                            <p class="card-text">Vital nutrients to support 5 essential for lifelong health</p>
+                            <p class="card-text">$45.000</p>
+                            <button type="button" class="btn btn-danger btn-agregar" data-nombre="Hill's Science Diet puppy" data-precio="45000"><span class="addToCart"><i class="fa-solid fa-cart-plus"></i> Add to cart</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="https://animalsveterinaria.vtexassets.com/arquivos/ids/157269-1200-auto?v=638039645461070000&width=1200&height=auto&aspect=true" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hill's Science Diet Sensitive</h5>
+                            <p class="card-text">Hill’s Science Diet Adult Sensitive Stomach & Skin</p>
+                            <p class="card-text">$30.000</p>
+                            <button type="button" class="btn btn-danger btn-agregar" data-nombre="Hill's Science Diet Sensitive" data-precio="30000"><span class="addToCart"><i class="fa-solid fa-cart-plus"></i> Add to cart</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="https://animalsveterinaria.vtexassets.com/arquivos/ids/166351-1200-auto?v=638803218647030000&width=1200&height=auto&aspect=true" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hill's Science Diet Adult 7+</h5>
+                            <p class="card-text">Senior dry dog food offers easy-to-digest nutrition for specific aging needs in a kibble form, with a texture and aroma pets love.</p>
+                            <p class="card-text">$28.000</p>
+                            <button type="button" class="btn btn-danger btn-agregar" data-nombre="Hill's Science Diet Adult 7+" data-precio="28000"><span class="addToCart"><i class="fa-solid fa-cart-plus"></i> Add to cart</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="https://animalsveterinaria.vtexassets.com/arquivos/ids/166816-1200-auto?v=638913171305200000&width=1200&height=auto&aspect=true" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Kitten Chicken Recipe</h5>
+                            <p class="card-text">Supports the developmental needs of kittens to help start life</p>
+                            <p class="card-text">$50.000</p>
+                            <button type="button" class="btn btn-danger btn-agregar" data-nombre="Kitten Chicken Recipe" data-precio="50000"><span class="addToCart"><i class="fa-solid fa-cart-plus"></i> Add to cart</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+                <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-cart-shopping"></i> Cart</h5>
+                        <ul class="list-group mb-3" id="lista-carrito">
+                        <li class="list-group-item">No items yet</li>
+                        </ul>
+                        <h6><span id="total">Total: $0</span></h6>
+                        <div class="py-5">
+                        <button class="btn btn-danger mt-auto mb-3">Buy now</button>
+                        <button class="btn btn-danger mt-auto mb-3">Vaciar Carrito</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
